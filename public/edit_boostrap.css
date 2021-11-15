@@ -1,0 +1,78 @@
+
+ body{
+     background-image: url("white.jpg");
+ }
+ .foto{
+    height: 300;
+    width: 200;
+    position:absolute;
+    bottom :0;
+    right :300px;
+    top :250px;
+    flex: 1;
+}
+.navbar{
+    margin-left: auto;
+}
+.kalimat {
+    padding: 0;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 10%;
+    font-size: medium;
+    text-align: justify;
+}
+.hireme{
+    font-size: 20;
+    padding-left: 100;
+    padding-top: 100;
+    text-align: justify;
+}
+.hireme:hover {
+    color :#fff
+}
+
+.alley{
+    font-size: large;
+    padding-left: 100;
+    padding-top: 250;
+    text-align: start;
+}
+nav{
+    flex:1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+}
+nav ul li a:hover a:active{
+    background-color: #4d94ff;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+}
+.add{
+    margin: 10;
+    padding: 10;
+    margin-top: 50;
+    margin-bottom: 20;
+    box-sizing: border-box;
+    font-size: small;
+}
+.car{
+    padding-top: 30px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption{
+    background-color: black;
+}

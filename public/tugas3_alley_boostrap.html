@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Boostrap Alley | PWEB C | Popover</title>   
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel = "stylesheet" href="edit_boostrap.css">
+    </head>
+    <body>
+    <!--Nav Pills-->
+    <div class = "dropdown">
+        <nav>
+           <ul class = 'nav nav-tabs'>
+            <li class = "nav-item">
+                <a href="#p1" data-toggle="tab"> Home</a></li>
+            <li class = "nav-item">
+                <a  href="#p2" data-toggle="tab">About</a></li>
+            </li>
+            <div class = "dropdown">
+                <button type = "button"  data-toggle="dropdown" class = "btn btn-link dropdown-toggle">Contact <i class="fas fa-caret-down"></i></button>
+                <div class = "dropdown-menu">
+                    <a class="dropdown-item" href="mailto:hajdahaleyda19@gmail.com">Email</a>
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/hajdah-aleyda-aaa0b81b7/">LinkedIn</a>
+                    <a class="dropdown-item" href="https://www.instagram.com/hajdah_aleyda/">Instagram</a>
+                </div>
+            </div>
+        </ul>   
+    <!--Tab Panes-->
+    <div class = "tab-content">
+        <div id = "p1" class = "container tab-pane active">
+            <div class = "alley">
+            <h2> I am Hajdah Aleyda. <br> 18 Years old woman <br> who likes to explore <br> new things<h2>
+                <div class = "foto">
+                    <img src = "foto_alley_2__2_-removebg-preview.png">   
+                </div>   
+            </div>     
+                <div class = "hireme">
+                    <a href="#" title="Notes" data-placement="right" data-container = "body" data-toggle="popover" data-trigger="focus" data-content="this link will direct you to my email"><button type="button" class="btn btn-outline-primary"> Hire Me</button></a>
+                </div>
+        </div>
+        <div id = "p2" class = " container tab-pane fade"> 
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner" style="padding-top:30px;">
+                  <div class="carousel-item active">
+                    <img src="valorant.jpeg" alt="favorite game" width="700" height="600" >
+                    <div class = "carousel-caption">
+                        <h5>Favorite Game</h5>
+                        <h2>Valorant</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="santorini-3678059_1920.jpg" alt="favorite place" width="700" height="600">
+                    <div class = "carousel-caption">
+                        <h5>Favorite Place</h5>
+                        <h2>Santo Rini</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="bring_me_the_horizon.jpg" alt="favorite band" width="700" height="600">
+                    <div class = "carousel-caption">
+                        <h5>Favorite Band</h5>
+                        <h2>Bring Me The Horizon</h2>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+            <div class="kalimat" style="font-weight: 400;">
+                <h2>About</h2>
+                <p>A happy and critical thinking, Hajdah Aleyda, usually called Alley, is a second-year student at Institut Teknologi Sepuluh Nopember at Information Systems Major. She was born in Surabaya, 19 <sup>th</sup> October 2002. Alley has interested in UX design and right now she is making some portofolios. </p>  
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+
+    </div>
+    <address>
+        <i>Made Originally by Hajdah Aleyda</i>
+     </address>
+   <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+    });
+    </script>
+   </div>
+</body>
+</html>

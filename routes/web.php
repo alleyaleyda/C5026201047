@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Tugas Input Ngoding PWEB ke Laravel
 Route::get('praktikum1', function () {
     return view('prak1pweb'); //kalo udah konek model, ini gabisa dipakai
 });
@@ -31,6 +32,8 @@ Route::get('perhitungan', 'ViewController@showPerhitungan');
 
 Route::post('fungsi', 'ViewController@showFungsi');
 
+
+// Tugas CRUD Pegawai
 Route::get('/pegawai','PegawaiController@index');
 
 Route::get('/pegawai/tambah','PegawaiController@tambah');
@@ -42,3 +45,17 @@ Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+
+
+//Tugas CRUD Absen
+Route::get('/absen','AbsenController@index');
+
+Route::get('/absen/input','AbsenController@input');
+
+Route::post('/absen/store','AbsenController@store');
+
+Route::get('/absen/edit/{id}','AbsenController@edit');
+
+Route::post('/absen/update','AbsenController@update');
+
+Route::get('/absen/hapus/{id}','AbsenController@hapus');

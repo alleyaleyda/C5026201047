@@ -15,15 +15,15 @@ class AbsenController extends Controller
 
     public function input()
     {
-
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get();
         // memanggil view tambah
-        return view('absen.input');
+        return view('absen.input',['pegawai' => $pegawai] );
 
     }
 
     public function store(Request $request){
         DB::table('absen')->insert([
-            'IDPegawai' => $request->idpeg,
+            'IDPegawai' => $request->IDPegawai,
             'Tanggal' => $request->tgl,
             'Status' => $request->status
         ]);

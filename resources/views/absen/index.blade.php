@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tugas CRUD Absen | Hajdah Aleyda</title>
-</head>
-<body>
-
+@extends('layout.org')
+@section('title', "ABSEN PEGAWAI")
+@section('content')
 
 	<h3>Data Absen Pegawai</h3>
 
@@ -13,13 +9,12 @@
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table class="table table-striped table-hover table-bordered align-middle" >
 		<tr>
-			<th>ID</th>
 			<th>IDPegawai</th>
 			<th>Tanggal</th>
 			<th>Status</th>
-
+            <th>Opsi</th>
 		</tr>
 		@foreach($absen as $a)
 		<tr>
@@ -27,14 +22,12 @@
 			<td>{{ $a->Tanggal }}</td>
 			<td>{{ $a->Status }}</td>
 			<td>
-				<a href="/absen/edit/{{ $a->ID }}">Edit</a>
+				<a class="btn btn-warning"href="/absen/edit/{{ $a->ID }}">Edit</a>
 				|
-				<a href="/absen/hapus/{{ $a->ID }}">Hapus</a>
+				<a class="btn btn-danger"href="/absen/hapus/{{ $a->ID }}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach
 	</table>
-
-
-</body>
-</html>
+</div>
+@endsection

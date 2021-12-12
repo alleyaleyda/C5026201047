@@ -9,7 +9,12 @@ class AbsenController extends Controller
 {
     //
     public function index(){
-        $absenPeg = DB::table('absen')->get();
+        //$absenPeg = DB::table('absen')->get();
+        //$absenPeg = DB::table('absen')->paginate(5);
+        $absenPeg = DB::table('absen')
+        ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
+        ->select('absen.*', 'pegawai.pegawai_nama')
+        ->paginate(3);
         return view('absen.index',['absen' => $absenPeg]);
     }
 
@@ -33,10 +38,15 @@ class AbsenController extends Controller
 
     public function edit($id)
     {
-        // mengambil data pegawai berdasarkan id yang dipilih
+
+        // mengambil data absen berdasarkan id yang dipilih
         $absenPeg = DB::table('absen')->where('ID', $id)->get();
-        // passing data pegawai yang didapat ke view edit.blade.php
-        return view('absen.edit',['absen' => $absenPeg]);
+
+        // mengambil data dari table pegawai
+        $pegawai = DB::table('pegawai')->orderBy('pegawai_nama', 'asc')->get(); //defaultnya urut Primary Key
+
+        // passing data absen yang didapat ke view update.blade.php
+        return view('absen.edit', ['absen' => $absenPeg, 'pegawai' => $pegawai]);
 
     }
     public function update(Request $request)

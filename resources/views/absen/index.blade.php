@@ -11,23 +11,28 @@
 
 	<table class="table table-striped table-hover table-bordered align-middle" >
 		<tr>
-			<th>IDPegawai</th>
+            <th>No</th>
+			<th>Nama Pegawai</th>
 			<th>Tanggal</th>
 			<th>Status</th>
             <th>Opsi</th>
 		</tr>
 		@foreach($absen as $a)
 		<tr>
-			<td>{{ $a->IDPegawai }}</td>
+            <td>{{ $loop->iteration }}</td>
+			<td>{{ $a->pegawai_nama}}</td>
 			<td>{{ $a->Tanggal }}</td>
 			<td>{{ $a->Status }}</td>
 			<td>
-				<a class="btn btn-warning"href="/absen/edit/{{ $a->ID }}">Edit</a>
+                <div class="mb-2 mt-2">
+				<a class="btn btn-warning mb-2"href="/absen/edit/{{ $a->ID }}">Edit</a>
 				|
-				<a class="btn btn-danger"href="/absen/hapus/{{ $a->ID }}">Hapus</a>
+				<a class="btn btn-danger mb-2"href="/absen/hapus/{{ $a->ID }}">Hapus</a>
+            </div>
 			</td>
 		</tr>
 		@endforeach
 	</table>
 </div>
+{{ $absen->links() }}
 @endsection

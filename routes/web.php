@@ -46,6 +46,10 @@ Route::post('/pegawai/update','PegawaiController@update');
 
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
 
+Route::get('/pegawai/cari','PegawaiController@cari');
+
+Route::get('/pegawai/detail/{id}','PegawaiController@view');
+
 
 //Tugas CRUD Absen
 Route::get('/absen','AbsenController@index');
@@ -59,3 +63,21 @@ Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+
+//Praktikum Kaos Mingdep
+Route::get('/kaos','KaosController@index');
+
+Route::get('/kaos/tambah','KaosController@tambah');
+
+Route::post('/kaos/store','KaosController@store');
+
+Route::get('/kaos/edit/{id}','KaosController@edit');
+
+Route::post('/kaos/update','KaosController@update');
+
+Route::get('/kaos/hapus/{id}','KaosController@hapus');
+
+Route::get('/kaos/cari','KaosController@cari');
+
+Route::get('/kaos/detail/{id}','KaosController@view');
+

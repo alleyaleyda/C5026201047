@@ -18,7 +18,7 @@
         <header class="container">
             <div class="col-5">
                 <a href="/" class="navbar-brand">
-                    <img src="{{ asset('images/me.jpg') }}" class="img-fluid rounded float-start mt-3 mx-5" style="width:50px ; heigth:60px"/>
+                    <img src="{{ asset('images/me.jpg') }}" class="img-fluid rounded float-start mt-3 mx-3" style="width:50px ; heigth:60px"/>
                 </a>
             </div>
             <div class="">
@@ -30,7 +30,7 @@
                 </div>
             </div>
         </header>
-        <div class="row m-5">
+        <div class="row m-3">
             <aside class="col-2">
                 <div class="row">
                     <nav class="navbar navbar-expand align-items-start py-2 sticky-top">
@@ -46,10 +46,7 @@
                                     <a href="/absen" class="nav-link">Data Absen</a>
                                 </li>
                                 <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link disabled">Minggu Depan</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link disabled">Praktikum</a>
+                                    <a href="/kaos" class="nav-link">Praktikum</a>
                                 </li>
                             </ul>
                         </div>
@@ -58,7 +55,7 @@
 
             </aside>
 
-            <div class="col-8">
+            <div class="col-7">
                 <div class="row container-fluid">
                     @section('content')
                     @show

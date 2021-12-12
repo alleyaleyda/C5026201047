@@ -19,19 +19,19 @@
 	<table class="table table-striped table-hover table-bordered align-middle" >
 		<tr>
             <th>No</th>
-            <!--<td><th>Kode Kaos</th>-->
+            <th>Kode Kaos</th>
 			<th>Merk Kaos</th>
-			<!--<td><th>Stok Kaos</th>-->
-			<!--<td><th>Tersedia</th>-->
+			<th>Stok Kaos</th>
+			<th>Tersedia</th>
             <th>Opsi</th>
 		</tr>
 		@foreach($kaos as $k)
 		<tr>
             <td>{{ $loop->iteration }}</td>
-            <!--<td>{{ $k->kodekaos}}</td>-->
+            <td>{{ $k->kodekaos}}</td>
 			<td>{{ $k->merkkaos}}</td>
-			<!--<td<td>{{ $k->stockkaos }}</td>-->
-			<!--<td>{{ $k->tersedia }}</td>-->
+			<td>{{ $k->stockkaos }}</td>
+			<td>{{ $k->tersedia }}</td>
 			<td>
                 <div class="mb-2 mt-2">
                 <a class="btn btn-primary mb-2"href="/kaos/detail/{{ $k->kodekaos }}">Detail</a>

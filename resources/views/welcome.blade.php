@@ -85,6 +85,7 @@
                     5026201047
                 </div>
 
+                <div class="container">
                 <div class="links">
                     <a href="tugas1.html">Tugas 1</a>
                     <a href="tugas2_hajdah_aleyda_CSS.html">Tugas 2</a>
@@ -94,6 +95,10 @@
                     <a href="praktikum2">Praktikum 2</a>
                     <a href="ets">ETS</a>
                     <a href="perhitungan">Tugas PHP</a>
+                    <a href="/pegawai">Tugas Data Pegawai</a>
+                    <a href="/absen">Tugas Data Absen</a>
+                    <a href="/kaos">Tugas Praktikum 3</a>
+                </div>
                 </div>
             </div>
         </div>

@@ -48,6 +48,9 @@
                                 <li class="nav-item mb-2">
                                     <a href="/kaos" class="nav-link">Praktikum</a>
                                 </li>
+                                <li class="nav-item mb-2">
+                                    <a href="/karyawan1" class="nav-link">EAS</a>
+                                </li>
                             </ul>
                         </div>
                       </nav>

@@ -81,3 +81,15 @@ Route::get('/kaos/cari','KaosController@cari');
 
 Route::get('/kaos/detail/{id}','KaosController@view');
 
+// Route EAS karyawan
+Route::get('/karyawan1','Karyawan1Controller@index');
+
+Route::get('/karyawan1/tambah','Karyawan1Controller@tambah');
+
+Route::post('/karyawan1/store','Karyawan1Controller@store');
+
+Route::get('/karyawan1/edit/{id}','Karyawan1Controller@edit');
+
+Route::post('/karyawan1/update','Karyawan1Controller@update');
+
+Route::get('/karyawan1/detail/{id}','Karyawan1Controller@view');
